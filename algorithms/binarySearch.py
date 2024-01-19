@@ -1,3 +1,5 @@
+# Iterative method
+
 def binary_sarch(array, target):
     # defining indexes to look for
     left = 0  # min index
@@ -11,7 +13,9 @@ def binary_sarch(array, target):
         if array[mid] < target:
             left = mid + 1
         else:
+            # Return index of target num
             return mid
+    # target not foud in the array
     return -1
 
 
