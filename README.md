@@ -36,7 +36,9 @@ Link lists are not built in for Python, so there is a need to implement them.
 
 _Time Complexity:_
 
-- Insert at beginning = O(1)
-- Insert/delete at end = O(n)
+- Add last element = O(1)
+- Remove las element = O(n)
 - Linked list traversal = O(n)
+- Insert/delete at beginning = O(1)
+- Insert/delete at an iterator position O(1)
 - Lookup by value = O(n)
