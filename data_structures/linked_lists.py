@@ -3,4 +3,5 @@
 # The last node of the linked lists has a pinter to NULL
 # The nodes in this case will consist of two things: their inner data and the address to the following node
 
+
 # Defining the blueprint for the node
