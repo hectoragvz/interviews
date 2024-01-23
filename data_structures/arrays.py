@@ -11,11 +11,26 @@
 # In PYTHON, lists are implemented as DYNAMIC ARRAYS
 
 # Some exercises
-month_expenses = [2200, 2350, 2600, 2130, 2190, 1950]
+new_list = [1,2,3]
+result = new_list[2] #search by index element of the array O(1)
 
-print(month_expenses[1] - month_expenses[0])
+# Searching for a value O(n)
+if 1 in new_list:
+  print(True)
 
-total = 0
-for month in range(3):
-  total += month_expenses[month]
-print(total)
+for n in range(len(new_list)):
+  if new_list[n] == 1:
+    print(True)
+    break
+
+for x in new_list:
+  if x == 1:
+    print(True)
+    break
+
+numbers = []
+numbers.append(1) # Append at the end
+numbers.insert(0,1) # Insert at beginning (index, value)
+numbers.extend([1,2,3]) # appends list at the end
+numbers.remove(2)
+print(numbers)

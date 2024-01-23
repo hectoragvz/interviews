@@ -26,6 +26,8 @@ _Time Complexity:_
 
 ### Linked Lists
 
+Best explanation I found on topic (https://www.youtube.com/watch?v=8hly31xKli0) - Intro to data structures section
+
 Contrary to arrays, which store values on continuous memory location, linked lists store values on random memory locations but each of those also store a reference to the next value in memory.
 When we add elements for example, we would just need to change the address located in the element prior to the one we are adding.
 We don´t need to preallocate space and insertio is easier.
