@@ -2,7 +2,7 @@
 # Elements must be sorted for Binary search to work
 def bsearch(array, left, right, target):
     if left <= right:
-        mid = (left + right) // 1
+        mid = (left + right) // 2
         if array[mid] == target:
             return mid
         elif array[mid] < target:
