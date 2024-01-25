@@ -9,9 +9,7 @@ Definitely read throughout [this](https://haseebq.com/how-to-break-into-tech-job
 ## Data Structures
 
 ---
-
 ### Arrays
-
 An array, also called a list in other programming languages, is a data structure allowing the storage of values in continuous spaces of memory.
 You can store different types of values such as integers, floats, objects or even other arrays (creating 2D or nd arrays) in them.
 In PYTHON, lists are implemented as DYNAMIC ARRAYS, meaning you dont´t need to specify the size of the arrays when declaration is performed.
@@ -25,7 +23,6 @@ _Time Complexity:_
 - Array deletion = O(n)
 
 ### Linked Lists
-
 Best explanation I found on topic (https://www.youtube.com/watch?v=8hly31xKli0) - Intro to data structures section
 
 Contrary to arrays, which store values on continuous memory location, linked lists store values on random memory locations but each of those also store a reference to the next value in memory.
@@ -45,8 +42,15 @@ _Time Complexity:_
 - Insert/delete at an iterator position O(1)
 - Lookup by value = O(n)
 
-
 ### Stacks
+The stack data structure is a collection of elements that highlight two basic operations: push (adding elements to the stack) and pop (deleting elements from the stack).
 
+Implements the last-In, First-Out approach, also called LIFO, which states the most recently added element will be removed frist from the strucutre.
 
-## Algorithms
+_Time Complexity:_
+
+- Search = O(n)
+- Access = O(n)
+- Insert and Delete (push and pop) - O(1)
+
+### Queues
