@@ -54,3 +54,12 @@ _Time Complexity:_
 - Insert and Delete (push and pop) - O(1)
 
 ### Queues
+Consider the stack data structure but now, the element we aim to remove is the first on a queue - FIFO (First In, First Out approach). 
+We now call push-add as <em>enqueue</em> and pop-delete as <em>dequeue</em>. The end were elements are added is called tail or back of the queue and the end where elements are removed is called as front or head of the queue.
+You can think about a queue as a line of customers waiting for a service.
+
+_Time Complexity:_
+
+- Search = O(n)
+- Access = O(n)
+- Insert and Delete (enqueue and dequeue) - O(1)
