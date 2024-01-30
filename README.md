@@ -6,6 +6,9 @@ View "basic" prerequisite video [here](https://www.youtube.com/watch?v=0K_eZGS5N
 
 Definitely read throughout [this](https://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/) article by Haseeb Qureshi to feel motivated, guided (and pumped!), specially if you come from a non-cs specific background like me.
 
+View basic algorithms/data structures/techniques roadmap [here](https://neetcode.io/roadmap). This is the base for the leetcode folder.
+
+
 ## Data Structures
 
 ---
