@@ -66,3 +66,22 @@ _Time Complexity:_
 - Search = O(n)
 - Access = O(n)
 - Insert and Delete (enqueue and dequeue) - O(1)
+
+<em>Linear</em> data structures (linked lists, queues, and stacks) are formed by sequential data. We can access each element inside of them in a single pass and have as single level of information. In <em>non-linear</em> data structures (trees and graphs), we have multiple levels of information and we may not be able to access all the elements of the ds in a single pass.
+
+### Tree
+
+Trees are non-linear data structures (opposite to those mentioned above). Trees have a collection of entities called nodes, and their objective is to represent the relantionships between these. The connections between nodes are called edges.
+
+The key terms to understand trees are listed in the image below, as posted by <em>geeksforgeeks</em>:
+
+![Tree data structure](./assets/Treedatastructure.png "Tree data structure")
+
+### Binary Tree
+
+In this type of tree, each node may have <em>at most</em> 2 children, or resulting nodes (called binary for this reason). These are the different types of binary trees:
+
+* Full: every node has 0 or 2 children
+* Complete: All the levels of the tree except for the last are filled, and are filled from left to right
+* Perfect: All internal nodes have 2 children and all leaves are in the same level
+* Pathological: Every parent has only 1 child node 
