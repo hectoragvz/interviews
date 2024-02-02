@@ -85,3 +85,18 @@ In this type of tree, each node may have <em>at most</em> 2 children, or resulti
 * Complete: All the levels of the tree except for the last are filled, and are filled from left to right
 * Perfect: All internal nodes have 2 children and all leaves are in the same level
 * Pathological: Every parent has only 1 child node 
+
+### Binary Search Tree
+
+The traits that define a Binary Search Tree (BST) are:
+
+1. The left subtree of a node contains only nodes with keys or values that are less than the parent´s value.
+2. The right subtree of a node contains only nodes with keys or values that are greater than the parent´s value.
+3. Both the left and the right subtree must be BSTs.
+
+_Time Complexity:_
+
+- Search = O(log (n))
+- Access = O(log (n))
+- Insert and Delete = O(log (n))
+
