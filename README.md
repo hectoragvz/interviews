@@ -108,3 +108,9 @@ A heap is a complete binary tree which satisfies the heap property: property of 
 complete binary tree where the key of every parent node is less than or equal to the cild node´s key
 * max hap / max binary heap
 complete binary tree where the key of every parent node is greater than or equal to the cild node´s key
+
+You can construct binary heap via Python lists:
+
+*  ith element -> list[i]
+*  parent of ith element -> (i-1)//2
+*  children of ith element -> left: (2*i)+1 / right: (2*i)+2
