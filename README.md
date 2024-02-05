@@ -100,3 +100,11 @@ _Time Complexity:_
 - Access = O(log (n))
 - Insert and Delete = O(log (n))
 
+### Heap
+
+A heap is a complete binary tree which satisfies the heap property: property of a node in which the key of every parent node to be lesser than or equal to OR greater than or equal to the child´s node key.
+
+* min heap / min binary heap
+complete binary tree where the key of every parent node is less than or equal to the cild node´s key
+* max hap / max binary heap
+complete binary tree where the key of every parent node is greater than or equal to the cild node´s key
