@@ -115,5 +115,20 @@ You can construct binary heap via Python lists:
 *  parent of ith element -> (i-1)//2
 *  children of ith element -> left: (2*i)+1 / right: (2*i)+2
 
-### Graphs
+### Graph
 
+A tree will always be a graph, but not all graphs are trees.
+
+We can represent a graph by G = (V, E) where:
+* G: graph
+* V: set of vertices
+* E: set of edges
+
+The two main categories of graphs are:
+
+1. Undirected graph: A graph from which all of its edges are bi-directional
+
+2. Directed graph: A graph from which all of its edges are uni-directional
+
+as from geeksforgeeks:
+![Graph data structure](./assets/graph.jpg "Graph data structure")
