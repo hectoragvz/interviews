@@ -114,3 +114,6 @@ You can construct binary heap via Python lists:
 *  ith element -> list[i]
 *  parent of ith element -> (i-1)//2
 *  children of ith element -> left: (2*i)+1 / right: (2*i)+2
+
+### Graphs
+
