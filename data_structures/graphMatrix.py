@@ -41,6 +41,36 @@ def add_edge(node1, node2, cost):
     graph[index2][index1] = cost # this line disappears for directed graphs
 
 
+# Works for all graphs
+def delete_node(node):
+  global node_count
+  if node not in nodes:
+    print("The given node is not present in the graph")
+  else:
+    index1 = nodes.index[node]
+    # Delete from nodes list
+    node_count -= 1
+    nodes.remove(node)
+    #Delete row and column from matrix
+    graph.pop(index1)
+    for i in graph:
+      i.pop(index1)
+    
+
+def delete_edge(node1, node2):
+  if node1 not in nodes:
+    print("The given node is not present in the graph")
+  elif node2 not in nodes:
+    print("The given node is not present in the graph")
+  else:
+    index = nodes.index(node1)
+    index2 = nodes.index(node2)
+
+    graph[index][index2] = 0
+    graph[index2][index] = 0
+
+
+
 print("Before addtion")
 print(nodes)
 print(graph)
