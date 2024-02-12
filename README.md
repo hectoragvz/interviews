@@ -132,3 +132,11 @@ The two main categories of graphs are:
 
 as from geeksforgeeks:
 ![Graph data structure](./assets/graph.jpg "Graph data structure")
+
+
+## Algorithms
+
+---
+
+### 
+
