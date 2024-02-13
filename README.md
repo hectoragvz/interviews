@@ -138,5 +138,5 @@ as from geeksforgeeks:
 
 ---
 
-### 
+### Quick Sort
 
