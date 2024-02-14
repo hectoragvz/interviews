@@ -8,11 +8,12 @@ Definitely read throughout [this](https://haseebq.com/how-to-break-into-tech-job
 
 View basic algorithms/data structures/techniques roadmap [here](https://neetcode.io/roadmap). This is the base for the leetcode folder.
 
-
 ## Data Structures
 
 ---
+
 ### Arrays
+
 An array, also called a list in other programming languages, is a data structure allowing the storage of values in continuous spaces of memory.
 You can store different types of values such as integers, floats, objects or even other arrays (creating 2D or nd arrays) in them.
 In PYTHON, lists are implemented as DYNAMIC ARRAYS, meaning you dont´t need to specify the size of the arrays when declaration is performed.
@@ -26,6 +27,7 @@ _Time Complexity:_
 - Array deletion = O(n)
 
 ### Linked Lists
+
 Best explanation I found on topic (https://www.youtube.com/watch?v=8hly31xKli0) - Intro to data structures section
 
 Contrary to arrays, which store values on continuous memory location, linked lists store values on random memory locations but each of those also store a reference to the next value in memory.
@@ -46,6 +48,7 @@ _Time Complexity:_
 - Lookup by value = O(n)
 
 ### Stacks
+
 The stack data structure is a collection of elements that highlight two basic operations: push (adding elements to the stack) and pop (deleting elements from the stack).
 
 Implements the last-In, First-Out approach, also called LIFO, which states the most recently added element will be removed frist from the strucutre.
@@ -57,7 +60,8 @@ _Time Complexity:_
 - Insert and Delete (push and pop) - O(1)
 
 ### Queues
-Consider the stack data structure but now, the element we aim to remove is the first on a queue - FIFO (First In, First Out approach). 
+
+Consider the stack data structure but now, the element we aim to remove is the first on a queue - FIFO (First In, First Out approach).
 We now call push-add as <em>enqueue</em> and pop-delete as <em>dequeue</em>. The end were elements are added is called tail or back of the queue and the end where elements are removed is called as front or head of the queue.
 You can think about a queue as a line of customers waiting for a service.
 
@@ -81,10 +85,10 @@ The key terms to understand trees are listed in the image below, as posted by <e
 
 In this type of tree, each node may have <em>at most</em> 2 children, or resulting nodes (called binary for this reason). These are the different types of binary trees:
 
-* Full: every node has 0 or 2 children
-* Complete: All the levels of the tree except for the last are filled, and are filled from left to right
-* Perfect: All internal nodes have 2 children and all leaves are in the same level
-* Pathological: Every parent has only 1 child node 
+- Full: every node has 0 or 2 children
+- Complete: All the levels of the tree except for the last are filled, and are filled from left to right
+- Perfect: All internal nodes have 2 children and all leaves are in the same level
+- Pathological: Every parent has only 1 child node
 
 ### Binary Search Tree
 
@@ -104,25 +108,26 @@ _Time Complexity:_
 
 A heap is a complete binary tree which satisfies the heap property: property of a node in which the key of every parent node to be lesser than or equal to OR greater than or equal to the child´s node key.
 
-* min heap / min binary heap
-complete binary tree where the key of every parent node is less than or equal to the cild node´s key
-* max hap / max binary heap
-complete binary tree where the key of every parent node is greater than or equal to the cild node´s key
+- min heap / min binary heap
+  complete binary tree where the key of every parent node is less than or equal to the cild node´s key
+- max hap / max binary heap
+  complete binary tree where the key of every parent node is greater than or equal to the cild node´s key
 
 You can construct binary heap via Python lists:
 
-*  ith element -> list[i]
-*  parent of ith element -> (i-1)//2
-*  children of ith element -> left: (2*i)+1 / right: (2*i)+2
+- ith element -> list[i]
+- parent of ith element -> (i-1)//2
+- children of ith element -> left: (2*i)+1 / right: (2*i)+2
 
 ### Graph
 
 A tree will always be a graph, but not all graphs are trees.
 
 We can represent a graph by G = (V, E) where:
-* G: graph
-* V: set of vertices
-* E: set of edges
+
+- G: graph
+- V: set of vertices
+- E: set of edges
 
 The two main categories of graphs are:
 
@@ -133,10 +138,26 @@ The two main categories of graphs are:
 as from geeksforgeeks:
 ![Graph data structure](./assets/graph.jpg "Graph data structure")
 
-
 ## Algorithms
 
 ---
 
 ### Quick Sort
 
+The key to the quicksort algorithm is to try to place a predefined pivot element in the list and place all smaller values to the left and all greater values to the right of it. When hat happens, quicksort will run recursively for each sublist and the final output will be a sorted list.
+
+To select a pivot elemtn from the list you can:
+ * Pick the first element (program implemented in code [here]("./algorithms/sort/quickSort.py))
+ * Pick the last element
+ * Pick a random element
+ * Pick the middle element
+
+as geeksforgeeks
+
+![Quicksort diagram]("./assets/QuickSort2.png)
+
+_Time Complexity:_
+
+- Best case = O(n log (n))
+- Average Case = O(n log (n))
+- Worst case = O(n**2) - check [randomized quicksort]("./algorithms/sort/randomizedQS.py) to compensate this case
