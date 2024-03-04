@@ -1,6 +1,6 @@
 # Contrary to arrays, which store values on continuous memory location, linked lists store values on random memory locations but each of those also store a reference to the next value in memory.
 
-# The last node of the linked lists has a pinter to NULL
+# The last node of the linked lists has a pointer to NULL
 # The nodes in this case will consist of two things: their inner data and the address to the following node
 
 
@@ -16,14 +16,13 @@ class Node:
         self.next_node = None
 
     def __repr__(self):
-        return f"<Node> {self.data}"
+        return f"<{self.data}>"
 
 
 class LinkedList:
     """
     Singly linked list
     """
-
     def __init__(self):
         self.head = None
 

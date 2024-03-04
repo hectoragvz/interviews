@@ -40,3 +40,10 @@ class LinkedList:
       if current.next == self.tail:
         self.tail = current
       current.next = current.next.next
+
+  def print(self):
+        curr = self.head.next
+        while curr:
+            print(curr.value, " -> ", end="")
+            curr = curr.next
+        print()
