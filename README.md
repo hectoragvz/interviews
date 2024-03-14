@@ -81,6 +81,20 @@ The key terms to understand trees are listed in the image below, as posted by <e
 
 ![Tree data structure](./assets/Treedatastructure.png "Tree data structure")
 
+Some keys to remember about trees:
+* If a tree has n nodes, it will have n-1 edges
+* Degree of a node: number of children
+* Degree of tree: the highest degree out of any node in the tree will be the degree of the tree
+* Level of tree: levels of nodes in a tree starting from 0
+* Height of a node: Out of the longest path from the node to any leaf node, the number of edges in that path
+* Height of a tree: height of the root node
+* Depth of a node: number of edges from the root node to a particular node
+* Depth of a tree: number of edges from the root node in the longest path
+
+### General Tree
+
+Type of tree where each node can have any number of child nodes.
+
 ### Binary Tree
 
 In this type of tree, each node may have <em>at most</em> 2 children, or resulting nodes (called binary for this reason). These are the different types of binary trees:
