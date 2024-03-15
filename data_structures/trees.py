@@ -4,7 +4,6 @@
 
 # A sole node can be considered to be a tree already, that is the reason we´ll implement a BST and the Node class in one go.
 
-
 class TreeNode:
     def __init__(self, value):
         self.value = value
@@ -26,6 +25,20 @@ class TreeNode:
                 # Recursion here
                 self.right.insert(value)
 
+    def find(self, value):
+        if value < self.value:
+            if self.left is None:
+                return False
+            else:
+                return self.left.find(value)
+        elif value > self.value:
+            if self.right is None:
+                return False
+            else:
+                return self.right.find(value)
+        else:
+            return True
+        
     # Going left all the time if possible and only prints if cant go left any further (returns values in asc order)
     def inorder_traversal(self):
         if self.left:
@@ -50,19 +63,6 @@ class TreeNode:
             self.right.postorder_traversal()
         print(self.value)
 
-    def find(self, value):
-        if value < self.value:
-            if self.left is None:
-                return False
-            else:
-                return self.left.find(value)
-        elif value > self.value:
-            if self.right is None:
-                return False
-            else:
-                return self.right.find(value)
-        else:
-            return True
         
 
 tree = TreeNode(10)

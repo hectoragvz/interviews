@@ -102,9 +102,10 @@ In this type of tree, each node may have <em>at most</em> 2 children, or resulti
 - Full: every node has 0 or 2 children
 - Complete: All the levels of the tree except for the last are filled, and are filled from left to right
 - Perfect: All internal nodes have 2 children and all leaves are in the same level
+- Balanced: A balanced binary tree is such a tree whose left and right subtrees' heights differ by not more than 1
 - Pathological: Every parent has only 1 child node
 
-### Binary Search Tree
+### Binary Search Tree (BST)
 
 The traits that define a Binary Search Tree (BST) are:
 
