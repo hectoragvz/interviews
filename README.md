@@ -119,6 +119,28 @@ _Time Complexity:_
 - Access = O(log (n))
 - Insert and Delete = O(log (n))
 
+#### Travsersing a Binary Tree
+
+Traversing a tree means to visit the nodes in a particular order.
+
+* **Pre-order Traversal**
+The following operadions are performed recursively at each node:
+1. Visit the root node
+2. Traversing the left-subtree
+3. Traversing the right-subtree
+
+* **Inorder Traversal** 
+The following operations are performed recursively at each node:
+1. Traversing the left sub-tree
+2. Visit the root node
+3. Traversing the right sub-tree
+
+* **Post-Order Traversal**
+The following operations are performed recursively at each node:
+1. Traversing the left sub-tree
+2. Traversing the right sub-tree
+3. Visit the root node
+
 ### Heap
 
 A heap is a complete binary tree which satisfies the heap property: property of a node in which the key of every parent node to be lesser than or equal to OR greater than or equal to the child´s node key.

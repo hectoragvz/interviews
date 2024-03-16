@@ -43,13 +43,13 @@ class TreeNode:
     def inorder_traversal(self):
         if self.left:
             self.left.inorder_traversal()
-        print(self.value)
+        print(self.value, end="--")
         if self.right:
             self.right.inorder_traversal()
 
     # Prints every case
     def preorder_traversal(self):
-        print(self.value)
+        print(self.value, end="--")
         if self.left:
             self.left.preorder_traversal()
         if self.right:
@@ -61,10 +61,9 @@ class TreeNode:
             self.left.postorder_traversal()
         if self.right:
             self.right.postorder_traversal()
-        print(self.value)
+        print(self.value, end="--")
 
         
-
 tree = TreeNode(10)
 tree.insert(5)
 tree.insert(9)
@@ -74,4 +73,6 @@ tree.insert(2)
 tree.insert(7)
 
 
-print(tree.find(21))
+print(tree.inorder_traversal())
+print({tree.preorder_traversal()})
+print(tree.postorder_traversal())
