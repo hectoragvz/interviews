@@ -1,6 +1,6 @@
-# A heap is an implementation of a priority queue
+import heapq
 
-# To remmember:
+# A heap is an implementation of a priority queue
 """
 ith element = list[i]
 left child = (2*i)+1
@@ -8,10 +8,7 @@ right child = (2*1)+2
 parent = (i-1)//2
 """
 
-import heapq
-
 # Min heap by default
-
 data = [10, 20, 43, 1, 2, 65, 17, 44, 2, 3, 1]
 data = [-x for x in data] # Easy way to turn into a max heap
 

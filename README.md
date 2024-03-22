@@ -141,20 +141,35 @@ The following operations are performed recursively at each node:
 2. Traversing the right sub-tree
 3. Visit the root node
 
-### Heap
+### Binary Heap
 
-A heap is a complete binary tree which satisfies the heap property: property of a node in which the key of every parent node to be lesser than or equal to OR greater than or equal to the child´s node key.
+A binary heap is a complete (All the levels of the tree except for the last are filled, and are filled from left to right) binary tree which satisfies the heap property: property of a node in which the key of every parent node to be lesser than or equal to OR greater than or equal to the child´s node key.
 
 - min heap / min binary heap
   complete binary tree where the key of every parent node is less than or equal to the cild node´s key
 - max hap / max binary heap
   complete binary tree where the key of every parent node is greater than or equal to the cild node´s key
 
-You can construct binary heap via Python lists:
+#### Heapify
+a process to rearrange the elements of the heap in order to maintain the heap priority - commonly used to create a binary heap from a binary tree. Used in:
 
+ - Insertion operation
+ - Deletion operation
+ - While creating a binary heap from a given array
+
+* Heapify Up: follows the bottom-up approach, we make sure heap properties are followed from bottom to top.
+
+* Heapify Down: follows the top-down approach. We check the heap properties from top to bottom.
+
+You can construct binary heap via Python lists. In a list of elements:
 - ith element -> list[i]
 - parent of ith element -> (i-1)//2
 - children of ith element -> left: (2*i)+1 / right: (2*i)+2
+
+### Tries (prefix Tree)
+
+Tries are most commonly used to represent characters that form words in the way of a tree.
+
 
 ### Graph
 
