@@ -180,6 +180,8 @@ We can represent a graph by G = (V, E) where:
 - G: graph
 - V: set of vertices
 - E: set of edges
+- (): ordered pair
+- {}: unordered pair
 
 The two main categories of graphs are:
 
