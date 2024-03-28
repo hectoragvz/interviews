@@ -18,8 +18,8 @@ def dfs(graph, source):
   while stack:
     node = stack.pop(-1)
     print(node)
-    for neighbor in graph[node]:
-      stack.append(neighbor)
+    for node in graph[node]:
+      stack.append(node)
 
 
 # BFS Traversal - Stack Data Structure
@@ -37,5 +37,5 @@ def bfs(graph, source):
 
 print("DFS")
 dfs(graph, "A")
-print("BFS")
-bfs(graph, "A")
+""" print("BFS")
+bfs(graph, "A") """

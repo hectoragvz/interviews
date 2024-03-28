@@ -2,8 +2,8 @@
 # ADJACENCY LIST
 
 def add_node(node):
-  if node in graph.keys():
-    print(f"{node} is in graph already")
+  if node in graph:
+    print("Node already in graph")
   else:
     graph[node] = []
 
@@ -36,7 +36,6 @@ def delete_node(node):
       if node in list:
         list.remove(node)
 
-
 def delete_edge(node1, node2):
   if node1 not in graph:
     print("The given node is not present in the graph")
@@ -49,10 +48,6 @@ def delete_edge(node1, node2):
 
 graph = {} # or dict()
 
-print(graph)
 add_node("A")
-add_node("B")
-add_node("C")
 
-add_edge("A", "C", 5)
 print(graph)
