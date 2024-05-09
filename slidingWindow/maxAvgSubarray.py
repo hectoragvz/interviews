@@ -7,13 +7,11 @@ def findMaxAverage(nums, k):
     maxValue = sum(nums[:k])
     testMax = maxValue
 
-    for i in range(len(nums)):
-        if i - k >= 0:
-            print(
-                f"maxValue is {maxValue}, adding {nums[i]} and subtracting {nums[i-k]}"
-            )
-            maxValue = maxValue + nums[i] - nums[i - k]
-            testMax = max(maxValue, testMax)
+    left = 0
+    for right in range(k, len(nums)):
+        maxValue = maxValue + nums[right] - nums[left]
+        testMax = max(maxValue, testMax)
+        left += 1
 
     res = float(testMax) / float(k)
     return res
