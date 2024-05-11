@@ -1,3 +1,6 @@
+# Minumum Size Subarray Sum
+
+
 def minSubArrayLen(self, target, nums):
 
     if sum(nums) < target:

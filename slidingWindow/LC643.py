@@ -1,3 +1,6 @@
+# Maximum Average Subarray 1
+
+
 def findMaxAverage(nums, k):
     """
     :type nums: List[int]

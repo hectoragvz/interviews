@@ -1,3 +1,6 @@
+# Substrings of Size 3 wih Distinct Characters
+
+
 def countGoodSubstrings(s):
     if len(s) < 3:
         return 0
