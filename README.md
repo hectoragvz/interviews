@@ -82,14 +82,15 @@ The key terms to understand trees are listed in the image below, as posted by <e
 ![Tree data structure](./assets/Treedatastructure.png "Tree data structure")
 
 Some keys to remember about trees:
-* If a tree has n nodes, it will have n-1 edges
-* Degree of a node: number of children
-* Degree of tree: the highest degree out of any node in the tree will be the degree of the tree
-* Level of tree: levels of nodes in a tree starting from 0
-* Height of a node: Out of the longest path from the node to any leaf node, the number of edges in that path
-* Height of a tree: height of the root node
-* Depth of a node: number of edges from the root node to a particular node
-* Depth of a tree: number of edges from the root node in the longest path
+
+- If a tree has n nodes, it will have n-1 edges
+- Degree of a node: number of children
+- Degree of tree: the highest degree out of any node in the tree will be the degree of the tree
+- Level of tree: levels of nodes in a tree starting from 0
+- Height of a node: Out of the longest path from the node to any leaf node, the number of edges in that path
+- Height of a tree: height of the root node
+- Depth of a node: number of edges from the root node to a particular node
+- Depth of a tree: number of edges from the root node in the longest path
 
 ### General Tree
 
@@ -123,20 +124,23 @@ _Time Complexity:_
 
 Traversing a tree means to visit the nodes in a particular order.
 
-* **Pre-order Traversal**
-The following operadions are performed recursively at each node:
+- **Pre-order Traversal**
+  The following operadions are performed recursively at each node:
+
 1. Visit the root node
 2. Traversing the left-subtree
 3. Traversing the right-subtree
 
-* **Inorder Traversal** 
-The following operations are performed recursively at each node:
+- **Inorder Traversal**
+  The following operations are performed recursively at each node:
+
 1. Traversing the left sub-tree
 2. Visit the root node
 3. Traversing the right sub-tree
 
-* **Post-Order Traversal**
-The following operations are performed recursively at each node:
+- **Post-Order Traversal**
+  The following operations are performed recursively at each node:
+
 1. Traversing the left sub-tree
 2. Traversing the right sub-tree
 3. Visit the root node
@@ -151,17 +155,19 @@ A binary heap is a complete (All the levels of the tree except for the last are 
   complete binary tree where the key of every parent node is greater than or equal to the cild node´s key
 
 #### Heapify
+
 a process to rearrange the elements of the heap in order to maintain the heap priority - commonly used to create a binary heap from a binary tree. Used in:
 
- - Insertion operation
- - Deletion operation
- - While creating a binary heap from a given array
+- Insertion operation
+- Deletion operation
+- While creating a binary heap from a given array
 
 * Heapify Up: follows the bottom-up approach, we make sure heap properties are followed from bottom to top.
 
 * Heapify Down: follows the top-down approach. We check the heap properties from top to bottom.
 
 You can construct binary heap via Python lists. In a list of elements:
+
 - ith element -> list[i]
 - parent of ith element -> (i-1)//2
 - children of ith element -> left: (2*i)+1 / right: (2*i)+2
@@ -169,7 +175,6 @@ You can construct binary heap via Python lists. In a list of elements:
 ### Tries (prefix Tree)
 
 Tries are most commonly used to represent characters that form words in the way of a tree.
-
 
 ### Graph
 
@@ -201,10 +206,11 @@ as from geeksforgeeks:
 The key to the quicksort algorithm is to try to place a predefined pivot element in the list and place all smaller values to the left and all greater values to the right of it. When hat happens, quicksort will run recursively for each sublist and the final output will be a sorted list.
 
 To select a pivot elemtn from the list you can:
- * Pick the first element (program implemented in code [here]("./algorithms/sort/quickSort.py))
- * Pick the last element
- * Pick a random element
- * Pick the middle element
+
+- Pick the first element (program implemented in code [here]("./algorithms/sort/quickSort.py))
+- Pick the last element
+- Pick a random element
+- Pick the middle element
 
 as geeksforgeeks
 
@@ -214,4 +220,4 @@ _Time Complexity:_
 
 - Best case = O(n log (n))
 - Average Case = O(n log (n))
-- Worst case = O(n**2) - check [randomized quicksort]("./algorithms/sort/randomizedQS.py) to compensate this case
+- Worst case = O(n\*\*2) - check [randomized quicksort]("./algorithms/sort/randomizedQS.py) to compensate this case
